@@ -1,0 +1,207 @@
+body {
+    overflow: hidden;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+ul, table, form, figure {
+    padding: 0;
+    margin: 0;
+}
+
+#wrap{
+    background: url("http://s.cn.bing.net/az/hprichbg/rb/YorklynCoveredBridge_ZH-CN9725813153_1920x1080.jpg") center center;
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.book-viewport {
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.book {
+    width: 960px;
+    height: 600px;
+}
+
+.book .page {
+    width: 461px;
+    height: 600px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.book .page {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.book .book-navigation {
+    font-size: 16px;
+    margin: 80px auto;
+    width: 300px;
+    height: 440px;
+    z-index: 1;
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.book .book-navigation li {
+    line-height: 25px;
+    list-style: outside none none;
+}
+
+.book .book-navigation li a {
+    clear: both;
+    color: #333;
+    float: left;
+    margin: 2px 0;
+    padding: 0 10px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.book .book-navigation li a:hover {
+    background: #cad1ee none repeat scroll 0 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.book .book-navigation li a span {
+    float: right;
+}
+
+.book .book-content {
+    font-size: 12px;
+    margin: 50px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
+    z-index: 1;
+    position: relative;
+}
+
+.book .even .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.2)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.book .odd .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.book .loader {
+    background-image: url(../images/loader.gif);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 280px;
+    left: 219px;
+}
+
+.book .shadow {
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -o-box-shadow: 0 0 20px #ccc;
+    -ms-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.book .next-button, .book .previous-button {
+    width: 22px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+}
+
+.book .next-button a, .book .previous-button a {
+    visibility: hidden;
+}
+
+.book .next-button {
+    right: -22px;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.book .previous-button {
+    left: -22px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+.book .previous-button-hover, .book .next-button-hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.book .previous-button-hover, .book .previous-button-down {
+    background-image: url(../images/arrows.png);
+    background-position: -4px 284px;
+    background-repeat: no-repeat;
+}
+
+.book .previous-button-down, .book .next-button-down {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.book .next-button-hover, .book .next-button-down {
+    background-image: url(../images/arrows.png);
+    background-position: -38px 284px;
+    background-repeat: no-repeat;
+}
+
+.animated {
+    -webkit-transition: margin-left 0.5s;
+    -moz-transition: margin-left 0.5s;
+    -ms-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+}
+
+.front-cover{
+    background-image: url(../images/book-covers.jpg);
+}

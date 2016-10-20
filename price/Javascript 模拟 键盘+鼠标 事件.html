@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  
+  <title>Javascript 模拟 键盘/鼠标 事件 | ForeverGlory&#39;s Prices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Javascript 模拟 键盘/鼠标 事件三个步骤：
+
+首先通过 document.createEvent() 方法创建event对象，接收一个参数，即表示要创建的事件类型的字符串：
+
+UIEvents（DOM3中的UIEvent）鼠标和键盘事件；
+MouseEvents（DOM3中的MouseEvent）鼠标事件；
+MutationEvents（DOM3中的MutationEvent）变动事件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript 模拟 键盘/鼠标 事件">
+<meta property="og:url" content="/price/Javascript 模拟 键盘+鼠标 事件.html">
+<meta property="og:site_name" content="ForeverGlory's Prices">
+<meta property="og:description" content="Javascript 模拟 键盘/鼠标 事件三个步骤：
+
+首先通过 document.createEvent() 方法创建event对象，接收一个参数，即表示要创建的事件类型的字符串：
+
+UIEvents（DOM3中的UIEvent）鼠标和键盘事件；
+MouseEvents（DOM3中的MouseEvent）鼠标事件；
+MutationEvents（DOM3中的MutationEvent）变动事件">
+<meta property="og:updated_time" content="2016-10-20T11:43:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript 模拟 键盘/鼠标 事件">
+<meta name="twitter:description" content="Javascript 模拟 键盘/鼠标 事件三个步骤：
+
+首先通过 document.createEvent() 方法创建event对象，接收一个参数，即表示要创建的事件类型的字符串：
+
+UIEvents（DOM3中的UIEvent）鼠标和键盘事件；
+MouseEvents（DOM3中的MouseEvent）鼠标事件；
+MutationEvents（DOM3中的MutationEvent）变动事件">
+  
+    <link rel="alternate" href="/atom.xml" title="ForeverGlory&#39;s Prices" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/book.css">
+  
+
+</head>
+
+    <body>
+        <div id="wrap">
+            <div id="canvas">
+    <div class="book-viewport">
+        <div class="book">
+            <!-- Previous button -->
+            <div ignore="1" class="previous-button">
+                
+                    <a href="/price/Linux 自动输入密码.html">
+                        Linux 自动输入密码
+                    </a>
+                
+            </div>
+            <div class="hard front-cover"></div>
+            <div class="hard front-side"></div>
+
+            <div class="fixed">
+                <div class="gradient"></div>
+                <div class="book-navigation">
+                    <ul>
+                        
+                            <li>
+                                <a href="/price/CSS 常用五类选择器.html" data-post="price/CSS 常用五类选择器.html"
+                                    
+                                >
+                                    最常用的五类CSS选择器 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Composer 插件之 Bower.html" data-post="price/Composer 插件之 Bower.html"
+                                    
+                                >
+                                    Composer 插件之 Bower <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Composer 插件之 Component.html" data-post="price/Composer 插件之 Component.html"
+                                    
+                                >
+                                    Composer 插件之 Component <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Composer 自定脚本执行.html" data-post="price/Composer 自定脚本执行.html"
+                                    
+                                >
+                                    Composer 执行脚本 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Drupal7 代码执行 Drush.html" data-post="price/Drupal7 代码执行 Drush.html"
+                                    
+                                >
+                                    Drupal7 代码执行 Drush <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Javascript 模拟 键盘+鼠标 事件.html" data-post="price/Javascript 模拟 键盘+鼠标 事件.html"
+                                    
+                                        data-current=true
+                                    
+                                >
+                                    Javascript 模拟 键盘/鼠标 事件 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Linux 自动输入密码.html" data-post="price/Linux 自动输入密码.html"
+                                    
+                                >
+                                    Linux 自动输入密码 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Doctrine Entity 关系之 inversedBy-mappedBy.html" data-post="price/Doctrine Entity 关系之 inversedBy-mappedBy.html"
+                                    
+                                >
+                                    Doctrine Entity 关系之 inversedBy-mappedBy <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Symfony 判断用户密码.html" data-post="price/Symfony 判断用户密码.html"
+                                    
+                                >
+                                    Symfony 判断用户密码 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Symfony 代码执行 Command.html" data-post="price/Symfony 代码执行 Command.html"
+                                    
+                                >
+                                    Symfony 代码执行 Command <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Symfony Form EntityType 使用.html" data-post="price/Symfony Form EntityType 使用.html"
+                                    
+                                >
+                                    Symfony EntityType 使用 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Drupal7 Entity 查询.html" data-post="price/Drupal7 Entity 查询.html"
+                                    
+                                >
+                                    Drupal7 Entity 查询 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Javascript 原生 Ajax 请求.html" data-post="price/Javascript 原生 Ajax 请求.html"
+                                    
+                                >
+                                    原生 Javascript Ajax 请求 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Linux 命令行不区分大小写.html" data-post="price/Linux 命令行不区分大小写.html"
+                                    
+                                >
+                                    Linux 命令行不区分大小写 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Drupal7 Theme 执行顺序.html" data-post="price/Drupal7 Theme 执行顺序.html"
+                                    
+                                >
+                                    Drupal7 Theme 详解 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/price/Twig for 标签.html" data-post="price/Twig for 标签.html"
+                                    
+                                >
+                                    Twig for 标签 <!--span>0</span-->
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-current" data-post="price/Javascript 模拟 键盘+鼠标 事件.html" data-title="Javascript 模拟 键盘/鼠标 事件" data-url="/price/Javascript 模拟 键盘+鼠标 事件.html">
+                <!-- //对应 post-id, post-url -->
+                <div class="gradient"></div>
+                <div class="book-content">
+                    <h1 id="Javascript-模拟-键盘-鼠标-事件"><a href="#Javascript-模拟-键盘-鼠标-事件" class="headerlink" title="Javascript 模拟 键盘/鼠标 事件"></a>Javascript 模拟 键盘/鼠标 事件</h1><p>三个步骤：</p>
+<ol>
+<li><p>首先通过 document.createEvent() 方法创建event对象，接收一个参数，即表示要创建的事件类型的字符串：</p>
+<ul>
+<li>UIEvents（DOM3中的UIEvent）鼠标和键盘事件；</li>
+<li>MouseEvents（DOM3中的MouseEvent）鼠标事件；</li>
+<li>MutationEvents（DOM3中的MutationEvent）变动事件；</li>
+<li>HTMLEvents（没有DOM3中对应的事件）HTML事件；</li>
+</ul>
+</li>
+<li><p>其次在创建了event对象之后，还需要使用与事件有关的信息对其进行初始化。每种类型的event对象都有一个特殊的方法，为它传入适当的数据就可以初始化该event对象。用 event.init……() 此类行的方法。</p>
+</li>
+<li>最后就是触发事件。这需要使用 dispatchEvent() 方法，接收一个参数，即表示要触发的event对象。</li>
+</ol>
+<h2 id="模拟鼠标事件"><a href="#模拟鼠标事件" class="headerlink" title="模拟鼠标事件"></a>模拟鼠标事件</h2><p>首先创建鼠标事件对象的方法createEvent()传入MouseEvents，返回的对象的方法initMouseEvent()，接收15个信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">1\. type（字符串）：事件类型如“click”；</div><div class="line">2\. bubble（布尔值）：是否冒泡；</div><div class="line">3\. cancelable（布尔值）：是否可取消；</div><div class="line">4\. view（AbstractView）：与事件关联的视图，一般为 document.defaultView ；</div><div class="line">5\. detail（整数）：一般为0，一般只有事件处理程序使用；</div><div class="line">6\. screenX（整数）：事件相对于屏幕的X坐标；</div><div class="line">7\. screenY（整数）；</div><div class="line">8\. clientX（整数）：事件相对于视口的X坐标；</div><div class="line">9\. clientY（整数）；</div><div class="line">10\. ctrlKey（布尔值）：是否按下了Ctrl键，默认为false；</div><div class="line">11\. altKey（布尔值）；</div><div class="line">12\. shiftKey（布尔值）；</div><div class="line">13\. metaKey（布尔值）；</div><div class="line">14\. button（整数）：表示按下了哪个鼠标键，默认为0；</div><div class="line">15\. relatedTarget（对象）：表示与事件相关的对象。一般只有在模拟mouseover与mouseout时使用。</div><div class="line">16\. 最后记得把event对象传给dispatchEvent()方法。</div></pre></td></tr></table></figure>
+<p>如模拟按钮的单击事件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//模拟click事件</span></div><div class="line"><span class="comment">//获取btn</span></div><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">"#btn"</span>);</div><div class="line"><span class="comment">//创建event</span></div><div class="line"><span class="keyword">var</span> event = <span class="built_in">document</span>.createEvent(<span class="string">"MouseEvents"</span>);</div><div class="line"><span class="comment">//初始化event</span></div><div class="line">event.initMouseEvent(<span class="string">"click"</span>,<span class="literal">true</span>,<span class="literal">true</span>,<span class="built_in">document</span>.defaultView,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="literal">false</span>,<span class="literal">false</span>,<span class="literal">false</span>,<span class="literal">false</span>,<span class="number">0</span>,<span class="literal">null</span>);</div><div class="line"><span class="comment">//触发事件</span></div><div class="line">btn.dispatchEvent(event);</div><div class="line">另外，建议使用构造函数<span class="string">"MouseEvent"</span>：</div><div class="line"><span class="keyword">var</span> evt = <span class="keyword">new</span> MouseEvent(<span class="string">"click"</span>, &#123;</div><div class="line">    <span class="attr">bubbles</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">cancelable</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">view</span>: <span class="built_in">window</span></div><div class="line">&#125;);</div><div class="line">btn.dispatchEvent(event);</div></pre></td></tr></table></figure>
+<h2 id="模拟键盘事件"><a href="#模拟键盘事件" class="headerlink" title="模拟键盘事件"></a>模拟键盘事件</h2><p>首先创建鼠标事件对象的方法createEvent()传入KeyboardEvents，返回的对象的方法initKeyEvent()，接收下面参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">1\. type（字符串）：要触发的事件类型，“keydown”等；</div><div class="line">2\. bubbles（布尔值）：表示事件是否应该冒泡；</div><div class="line">3\. cancelable（布尔值）：是否可以取消；</div><div class="line">4\. view（AbstractView）：与事件关联的视图。一般为 document.defaultView ；</div><div class="line">5\. key（布尔值）：表示按下的键的键码；</div><div class="line">6\. location（整数）：表示按下哪里的键。0为主键盘；1为左；2为右；3为数字键盘；4为虚拟键盘；5为手柄；</div><div class="line">7\. modifiers（字符串）：空格分隔的修改键列表，如“shift”；</div><div class="line">8\. repeat（整数）：在一行中按下了多少次这个键；</div></pre></td></tr></table></figure>
+<p>由于DOM3级不提倡使用keypress事件，因此只能利用这种技术来模拟keydown和keyup事件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> textbox = <span class="built_in">document</span>.querySelector(<span class="string">"#myTextBox"</span>);</div><div class="line"><span class="keyword">var</span> event = <span class="built_in">document</span>.createEvent(<span class="string">"KeyboardEvent"</span>);</div><div class="line">event.initKeyboardEvent(<span class="string">"keydown"</span>,<span class="literal">true</span>,<span class="literal">true</span>,<span class="built_in">document</span>.defaultView,<span class="string">"a"</span>,<span class="number">0</span>,<span class="string">"Shift"</span>,<span class="number">0</span>);</div><div class="line">textbox.dispatchEvent(event);</div></pre></td></tr></table></figure>
+<p>在Firefox中，调用createEvent()并传入”KeyEvents”就可以创建一个键盘事件，返回的事件对象会包含一个initKeyEvent()方法，接收参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">1\. type；</div><div class="line">2\. bubbles；</div><div class="line">3\. cancelable；</div><div class="line">4\. view；</div><div class="line">5\. ctrlKey；</div><div class="line">6\. altKey；</div><div class="line">7\. shiftKey；</div><div class="line">8\. metaKey；</div><div class="line">9\. keyCode；</div><div class="line">10\. charCode；</div></pre></td></tr></table></figure>
+<p>另外，建议使用构造函数”KeyboardEvent”</p>
+<h2 id="模拟其他事件"><a href="#模拟其他事件" class="headerlink" title="模拟其他事件"></a>模拟其他事件</h2><p>浏览器中很少使用变动事件和HTML事件；</p>
+<ul>
+<li>要模拟变动事件，可以用 createEvent(“MutationEvent”);initMutationEvent();</li>
+<li>要模拟HTML事件，可以用 createEvent(“HTMLEvents”);initEvent();</li>
+</ul>
+<h3 id="自定义DOM事件"><a href="#自定义DOM事件" class="headerlink" title="自定义DOM事件"></a>自定义DOM事件</h3><p>用createEvent(“CustomEvent”); initCustomEvent()方法，接收参数：type；bubbles；cancelable；detail；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">"#btn"</span>);</div><div class="line"><span class="keyword">var</span> evt = <span class="built_in">document</span>.createEvent(<span class="string">"CustomEvent"</span>);</div><div class="line">evt.initCustomEvent(<span class="string">"click"</span>,<span class="literal">true</span>,<span class="literal">true</span>,<span class="string">"Hello there"</span>);</div><div class="line">btn.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(event.detail);</div><div class="line">&#125;;</div><div class="line">btn.dispatchEvent(evt);</div></pre></td></tr></table></figure>
+<h3 id="IE中的事件模拟"><a href="#IE中的事件模拟" class="headerlink" title="IE中的事件模拟"></a>IE中的事件模拟</h3><p>调用 document.createEventObject() 方法，创建event对象，并指定必要的信息，最后在目标上调用fireEvent()方法，接收两个参数：事件处理程序名称和event对象：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">"#btn"</span>);</div><div class="line"><span class="keyword">var</span> evt = <span class="built_in">document</span>.createEventObject();</div><div class="line">evt.screenX = <span class="number">0</span>;</div><div class="line">evt.screenY = <span class="number">0</span>;</div><div class="line">evt.clientX = <span class="number">0</span>;</div><div class="line">evt.clientY = <span class="number">0</span>;</div><div class="line">evt.ctrlKey = <span class="literal">false</span>;</div><div class="line">evt.altKey = <span class="literal">false</span>;</div><div class="line">evt.shiftKey = <span class="literal">false</span>;</div><div class="line">evt.button = <span class="number">0</span>;</div><div class="line">btn.fireEvent(<span class="string">"onclick"</span>,evt);</div></pre></td></tr></table></figure>
+
+                </div>
+            </div>
+
+
+            <div class="hard back-side"></div>
+            <div class="hard back-cover"></div>
+            <!-- Next button -->
+            <div ignore="1" class="next-button">
+                
+                    <a href="/price/Drupal7 代码执行 Drush.html">
+                        Drupal7 代码执行 Drush
+                    </a>
+                    
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+        <script src="/js/jquery.js"></script>
+<script src="/js/turn.js"></script>
+<script src="/js/book.js"></script>
+
+    </body>
+</html>

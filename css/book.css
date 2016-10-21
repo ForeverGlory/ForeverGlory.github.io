@@ -5,11 +5,6 @@ body {
     padding: 0;
 }
 
-ul, table, form, figure {
-    padding: 0;
-    margin: 0;
-}
-
 #wrap{
     background: url("http://s.cn.bing.net/az/hprichbg/rb/YorklynCoveredBridge_ZH-CN9725813153_1920x1080.jpg") center center;
 }
@@ -87,13 +82,28 @@ ul, table, form, figure {
 }
 
 .book .book-content {
-    font-size: 12px;
     margin: 50px 20px;
     overflow-x: hidden;
     overflow-y: auto;
     height: 500px;
     z-index: 1;
     position: relative;
+}
+
+.book .book-content p{
+    line-height: 26px;
+}
+.book-content h1{
+    line-height: 42px;
+}
+.book-content h2{
+    line-height: 36px;
+}
+.book-content h3{
+    line-height: 32px;
+}
+.book-content h4{
+    line-height: 28px;
 }
 
 .book .even .gradient {
